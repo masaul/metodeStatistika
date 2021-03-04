@@ -1,0 +1,16 @@
+* Cara menyusun distribusi Frekuensi.
+    1. Mencari nilai rentang.
+       Range (R) = Nilai Data Terbesar – Nilai Data Terkecil 
+    2. Menentukan banyak kelas yang digunakan.
+       k = 1 + (3,3 x log n)
+	        dengan: k = Banyak kelas interval
+		              n = Banyak data yang digunakan
+    3. Menentukan panjang kelas.
+       P = R/k
+          dengan : p = panjang kelas
+                   R = range
+                   k = banyak kelas
+    4. Tentukan nilai ujung bawah kelas interval pertama
+    5. Masukkan semua data ke dalam interval kelas 
+
+
