@@ -1,0 +1,89 @@
+==== Menghitung Rata-rata ====
+             rata2 = jumlah semua nilai
+    Rumus =  ___________________________
+                Banyaknya Nilai data
+               
+               
+    ++++ Untuk data yang mengulang ++++
+           X1 + X2 + X3 + .... + Xn     SigmaX                Keterangan : n = Banyak data
+       X = _________________________  = _______                            SigmaX = Jumlah data
+                        n                  n
+                        
+                        
+    ++++ Data mengulang untuk frekuensi tertentu ++++
+      ++ Tabel Distribusi ++
+         Rumus :
+              f1X1 + f2X2 + ... + fnXn    SigmafX             Keterangan : SigmafX = jumlah dari X * Frekuensi.
+           X = _______________________  = ________                          X      = Nilai tengah
+                  f1 + f2 + ... + fn       Sigmaf                          SigmaX  = Jumlah dari semua data frekuensi
+      ++ Memakai Kode (U/C/Bebas) ++
+         Rumus :
+                      | SigmafU |                             Keterangan : X0 =
+           X = X0 + c | _______ |                                          c  = Jarak interval kelas
+                      |  Sigmaf |                                         SigmafU = Jumlah data dari fU
+                                                                          Sigmaf  = Jumlah data dari frekuensi
+         
+         
+     ## CATATAN ##
+        1. Cara menghitung X(nilai Tengah) adalah intervalKelas1 + intervalKelas2 kemudian dibagi dengan 2
+        2. cara menghitung fX adalah dengan cara mengalikan X(Nilai Tengah) dengan frekuensi
+        3. Cara menghitung SigmafX adalah dengan cara menjumlahkan semua fX yang sudah dikalikan tadi.
+        4. Cara menghitung fU dengan cara U dikalikan dengan frekuensi.
+
+
+==== Menghitung Median ====
+  Median adalah angka ditengah tengah.
+  
+                          (n + 1)                         Keterangan : n = banyaknya data pengamatan
+    Rumus: posisiMedian : _______ 
+                             2
+    
+        ## Catatan ##
+          1. Jika data tunggal, maka angka yg diambil hanya 1.
+          2. Jika data genap, maka angka yg diambil 2
+      
+    
+    ++++ Data berkelompok ++++
+                      | n/2 - F |         ==>>>>>>==      Keterangan : L0 = Batas bawah median 
+      Median = L0 + c | _______ |                                      c  = Jarak interval Kelas
+                      |    f    |                                      F  = Jumlah frekuensi semua kelas sebelum kelas mengandung median 
+                                                                       f  = frekuensi kelas median
+    
+         ## CATATAN ##
+          1. mencari letak median untuk menentukan L0 yaitu dengan cara sigmaf dibagi 2 kemudian hasilnya dicari sesuai frekuensi kemudian dicocokan dengan interval kelasnya.
+          2. mencari L0 dicari atasnya. semisal 60. maka L0 adalah 59,5 
+    
+    
+    
+==== Modus ====
+  Modus adalah angka yang sering muncul.
+    
+     ++++ Data Berkelompok ++++
+                     |   b1    |            == >>>>>>>> ==   Keterangan : L0 = Batas Bawah Kelas Modus                  
+      Modus = L0 + c |_________|                                          b1 = selisih antara frekuensi kelas modus dengan 
+                     | b1 + b2 |                                               frekuensi tepat satu kelas sebelum kelas modus
+                                                                          b2 = selisih antara frekuensi kelas modus dengan
+                                                                               frekuensi tepat satu kelas sesudah modus
+                                                                          c  = Jarak interval Kelas
+        ## CATATAN ##
+          1. semisal kelas modus 10. sebelum kelas modus 3 maka b1 adalah 10 - 3 = 7(b1)
+          2. semisal kelas modus 10. sesudah kelas mosud angka 6. maka b2 adalah 10 - 6 = 4(b2)
+      
+      
+      ++++ Hubungan Empiris ++++
+       # kesimetrian kurva distribusi :
+        1. rata-rata = Md = Mo  maka kurva mendekati simetri
+        2. Mo < Md < rata-rata  maka kurva miring kekanan (mendekati garis vertikal)
+        3. rata-rata < Md < Mo  maka kurva miring kekiri
+       
+       # Distribusi tidak simetri maka :
+          rata-rata hitung  -  Modus  =  3 (rata-rata hitung  -  Median)
+          atau :
+          X - Modus = 3(X - Median)
+          
+       
+       
+       
+       
+       
+       
